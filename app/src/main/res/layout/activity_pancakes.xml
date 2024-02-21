@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1E3D1"
+    tools:context=".pancakes">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/panin" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="2 cups flour" />
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="2tsp baking powder"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1/2 tsp baking soda"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1/4 cup sugar"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1.5 cups buttermilk"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="3 eggs"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="6 tbsp butter"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="2tsp vanilla extract"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/dry" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/dry"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/dry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="136dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/wet" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/wet" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/wet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/mix" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/mix" />
+
+                    <TableRow>
+
+                    </TableRow>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/fry" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/heat" />
+
+                    <Button
+                        android:id="@+id/mix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"
+                        android:text="Play Instruction" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/heat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/finalpan" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/finalPan" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/finalPan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/rigatoni"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/rigatoni"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CookEasier"
+        tools:targetApi="31">
+        <activity
+            android:name=".rigatoni"
+            android:exported="false"
+            android:parentActivityName=".dinnerOptions"/>
+        <activity
+            android:name=".dinnerOptions"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".caprese"
+            android:exported="false"
+            android:parentActivityName=".soupOptions"/>
+        <activity
+            android:name=".soupOptions"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".pancakes"
+            android:exported="false"
+            android:parentActivityName=".breakfastOptions" />
+        <activity
+            android:name=".searchRecipe"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".breakfastHash"
+            android:exported="false"
+            android:parentActivityName=".breakfastOptions" />
+        <activity
+            android:name=".breakfastOptions"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

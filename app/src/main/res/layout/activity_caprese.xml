@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1E3D1"
+    tools:context=".caprese">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/capin" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1/3 cup balsamic vinegar" />
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="2tbsp brown sugar"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="21 garlic clove, minced"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="3 tbsp olive oil"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="8oz fresh mozzarella, torn"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1.5lbs heirloom tomatoes"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="Salt and Pepper"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/sauce" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/capIng"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/sauce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="136dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/mixin" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/mixCap" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/mixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/arrange" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/Cut" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/cut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/finalcap" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/finalCap" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/finalCap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

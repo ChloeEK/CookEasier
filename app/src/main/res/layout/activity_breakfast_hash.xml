@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1E3D1"
+    tools:context=".breakfastHash">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/hashin" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="8 Slices of bacon" />
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="2tbsp olive oil"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="2 russet potatoes"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1/2 yellow onion"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1 large red pepper"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1 cup heavy cream"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1 teasp salt"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1 cup shredded cheese"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="1/4 cup green onions"/>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="4 eggs"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/bacon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/bacon"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/baconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="136dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/pepper" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/pepper" />
+                </TableRow>
+                <TableRow>
+                <Button
+                    android:text="Play Instruction"
+                    android:id="@+id/pepperButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#789779"/>
+            </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/milk" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/milk" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/milkButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cheese" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/cheese" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/cheeseButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/resource_final" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="@string/hashFinal" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:text="Play Instruction"
+                        android:id="@+id/finalButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#789779"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
